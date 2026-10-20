@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1220">
+  <title>Engineering Optimization Suite</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 48px 24px;
+      font-family: Arial, sans-serif;
+      background: #0B1220;
+      color: #FFFFFF;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 12px;
+      font-size: clamp(25px, 4vw, 38px);
+    }
+
+    header p {
+      color: #B7C7D9;
+      line-height: 1.6;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      display: block;
+      padding: 28px;
+      background: #14243A;
+      border: 1px solid #34465D;
+      border-radius: 16px;
+      color: #FFFFFF;
+      text-decoration: none;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .power {
+      border-top: 4px solid #5EEAD4;
+    }
+
+    .energy {
+      border-top: 4px solid #93C5FD;
+    }
+
+    .icon {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .power .icon, .power .open {
+      color: #5EEAD4;
+    }
+
+    .energy .icon, .energy .open {
+      color: #93C5FD;
+    }
+
+    .card p {
+      min-height: 64px;
+      color: #B7C7D9;
+      line-height: 1.7;
+    }
+
+    .open {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 28px 18px;
+      }
+
+      .apps {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .card p {
+        min-height: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Engineering Optimization Suite</h1>
+    <p>
+      Intelligent machining solutions for power, energy
+      and emissions optimization.
+    </p>
+  </header>
+
+  <main class="apps">
+    <a class="card power"
+       href="https://hanni.in/secretpage/">
+      <div class="icon">⚙</div>
+      <h2>Power Optimizer</h2>
+      <p>
+        Find power-optimized cutting conditions for
+        a given tool and workpiece.
+      </p>
+      <span class="open">Open application →</span>
+    </a>
+
+    <a class="card energy"
+       href="https://nithila-v.github.io/machining-optimizer-pwa/">
+      <div class="icon">♻</div>
+      <h2>Energy & Emissions Optimizer</h2>
+      <p>
+        Find cutting conditions that reduce energy
+        consumption and associated emissions.
+      </p>
+      <span class="open">Open application →</span>
+    </a>
+  </main>
+</body>
+</html>
